@@ -151,4 +151,10 @@
         </plugins>
     </build>
 
+	<developers>
+		<developer>
+			<name>Henrique Grigolli</name>
+			<email>henrigrigo@gmail.com</email>
+		</developer>
+	</developers>
 </project>
