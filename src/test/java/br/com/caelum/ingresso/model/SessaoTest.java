@@ -11,8 +11,8 @@ public class SessaoTest {
 	
 	@Test
 	public void oPrecoDaSessaoDeveSerIgualASomaDoPrecoDaSalaComOPrecoDoFilme() {
-		Sala sala = new Sala("Eldorado - IMAX", new BigDecimal("22.5"));
-		Filme filme = new Filme("Rogue One", Duration.ofMinutes(120), "Fantasy", new BigDecimal("12.0"));
+		Sala sala = new Sala("Eldorado - IMAX", new BigDecimal("22.50"));
+		Filme filme = new Filme("Rogue One", Duration.ofMinutes(120), "Fantasy", new BigDecimal("12.00"));
 		
 		BigDecimal somaDosPrecosDaSalaFilme = sala.getPreco().add(filme.getPreco());
 		

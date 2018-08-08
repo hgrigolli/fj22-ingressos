@@ -10,6 +10,7 @@ import org.junit.Test;
 
 import br.com.caelum.ingresso.model.Filme;
 import br.com.caelum.ingresso.model.Ingresso;
+import br.com.caelum.ingresso.model.Lugar;
 import br.com.caelum.ingresso.model.Sala;
 import br.com.caelum.ingresso.model.Sessao;
 import br.com.caelum.ingresso.model.desconto.DescontoEstudante;
@@ -23,10 +24,12 @@ public class DescontoTest {
 	private Sessao sessao;
 	private Ingresso ingresso;
 	private BigDecimal precoEsperado;
+	private Lugar lugar;
 	
 	
 	@Before
 	public void preparaDesconto() {
+		this.lugar = new Lugar("A", 1);
 		this.sala = new Sala("Sala IMAX", new BigDecimal("20.5"));
 		this.filme = new Filme("Rogue One", Duration.ofMinutes(120), "Fantasy", new BigDecimal("12"));
 		this.sessao = new Sessao(LocalTime.parse("10:00:00"), filme, sala);

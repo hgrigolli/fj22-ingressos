@@ -1,12 +1,12 @@
 package br.com.caelum.ingresso.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.Duration;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 /**
  * Created by nando on 03/03/17.
@@ -20,6 +20,7 @@ public class Filme {
     private String nome;
     private Duration duracao;
     private String genero;
+    
     private BigDecimal preco;
     
     
@@ -71,7 +72,7 @@ public class Filme {
     }
 
 	public BigDecimal getPreco() {
-		return preco.setScale(2, RoundingMode.HALF_UP);
+		return preco;
 	}
 
 	public void setPreco(BigDecimal preco) {

@@ -89,7 +89,7 @@ public class Sala {
     }
 
 	public BigDecimal getPreco() {
-		return preco.setScale(2, RoundingMode.HALF_UP);
+		return preco;
 	}
 
 	public void setPreco(BigDecimal preco) {
