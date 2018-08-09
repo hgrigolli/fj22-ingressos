@@ -9,9 +9,9 @@ import br.com.caelum.ingresso.model.desconto.SemDesconto;
 
 public enum TipoDeIngresso {
 	
-	INTEIRO(new SemDesconto()),
-	ESTUDANTE(new DescontoEstudante()),
-	BANCO(new DescontoParaBancos());
+	INTEIRA(new SemDesconto()),
+	MEIA(new DescontoEstudante()),
+	BANCOS(new DescontoParaBancos());
 	
 	private final Desconto desconto;
 	

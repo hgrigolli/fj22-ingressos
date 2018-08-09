@@ -21,6 +21,7 @@ public class Ingresso {
 	private BigDecimal preco;
 	@ManyToOne
 	private Lugar lugar;
+	
 	@Enumerated(EnumType.STRING)
 	private TipoDeIngresso tipoDeIngresso;
 	
